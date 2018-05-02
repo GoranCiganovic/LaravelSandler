@@ -1,0 +1,10 @@
+/sandlerserbia/vendor
+/sandlerserbia/node_modules
+/sandlerserbia/public/storage
+sandlerserbia/Homestead.yaml
+sandlerserbia/Homestead.json
+sandlerserbia/.env
+sandlerserbia/database/migrations
+sandlerserbia/package-lock.json
+sandlerserbia/package.json
+instructions.txt
