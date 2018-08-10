@@ -3,14 +3,14 @@
 return [
 
     /*
-            |--------------------------------------------------------------------------
-            | Validation Language Lines
-            |--------------------------------------------------------------------------
-            |
-            | The following language lines contain the default error messages used by
-            | the validator class. Some of these rules have multiple versions such
-            | as the size rules. Feel free to tweak each of these messages.
-            |
+    |--------------------------------------------------------------------------
+    | Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines contain the default error messages used by
+    | the validator class. Some of these rules have multiple versions such
+    | as the size rules. Feel free to tweak each of these messages.
+    |
     */
 
     'accepted' => 'Polje :attribute mora biti prihvaćeno.',
@@ -22,7 +22,7 @@ return [
     'alpha' => 'Polje :attribute može sadržati samo slova.',
     'alpha_dash' => 'Polje :attribute može sadržati samo slova, brojeve i donje crte.',
     'alpha_num' => 'Polje :attribute može sadržati samo slova i brojeve.',
-    'alpha_spaces' => 'Polje :attribute može sadržati samo slova, razmake i srednje crte.', //custom
+    'alpha_spaces' => 'Polje :attribute može sadržati samo slova, razmake, tačke, srednje crte i apostrofe.', //custom
     'array' => 'Polje :attribute mora sadržati nekih niz stavki.',
     'before' => 'Polje :attribute mora biti datum pre polja :date.',
     'before_today' => 'Polje :attribute mora biti datum pre današnjeg datuma.', //custom
@@ -34,7 +34,7 @@ return [
         'string' => 'Polje :attribute mora biti između :min - :max karaktera.',
         'array' => 'Polje :attribute mora biti između :min - :max stavki.',
     ],
-    'boolean' => 'Polje :attribute mora biti tačno ili netačno',
+    'boolean' => 'Polje :attribute mora biti tačno ili netačno.',
     'confirmed' => 'Potvrda polja :attribute se ne poklapa.',
     'date' => 'Polje :attribute nije važeći datum.',
     'date_format' => 'Polje :attribute ne odgovora prema formatu :format.',
@@ -95,14 +95,14 @@ return [
     'url' => 'Format polja :attribute nije validan.',
 
     /*
-            |--------------------------------------------------------------------------
-            | Custom Validation Language Lines
-            |--------------------------------------------------------------------------
-            |
-            | Here you may specify custom validation messages for attributes using the
-            | convention "attribute.rule" to name the lines. This makes it quick to
-            | specify a specific custom language line for a given attribute rule.
-            |
+    |--------------------------------------------------------------------------
+    | Custom Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify custom validation messages for attributes using the
+    | convention "attribute.rule" to name the lines. This makes it quick to
+    | specify a specific custom language line for a given attribute rule.
+    |
     */
 
     'custom' => [
@@ -122,17 +122,18 @@ return [
         'single_submit' => [
             'size' => 'Onemogućeno je korišćenje dvoklika!',
         ],
+
     ],
 
     /*
-            |--------------------------------------------------------------------------
-            | Custom Validation Attributes
-            |--------------------------------------------------------------------------
-            |
-            | The following language lines are used to swap attribute place-holders
-            | with something more reader friendly such as E-Mail Address instead
-            | of "email". This simply helps us make messages a little cleaner.
-            |
+    |--------------------------------------------------------------------------
+    | Custom Validation Attributes
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used to swap attribute place-holders
+    | with something more reader friendly such as E-Mail Address instead
+    | of "email". This simply helps us make messages a little cleaner.
+    |
     */
 
     'attributes' => [
@@ -151,7 +152,7 @@ return [
         'devine' => 'Devine iznos u dolarima',
         'dd_paying_day' => 'Dan plaćanja u mesecu',
         'exchange_value' => 'Srednji kurs (RSD)',
-        'representative' => 'Ovalšćeni zastupnik',
+        'representative' => 'Ovlašćeni zastupnik',
         'website' => 'Website',
         'address' => 'Adresa',
         'county' => 'Opština',

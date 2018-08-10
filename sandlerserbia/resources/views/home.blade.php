@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('title', 'Početna Sandler Serbia')
-
+    
 @section('content')
 <!-- Sandler Serbian DB -->
-<div id="sandlerserbia_database" class="container main-container">
+<div id="sandlerserbia_database" class="container main-container"> 
 
   <div class="well san-yell">
     <div class="row">
@@ -19,9 +19,9 @@
       <!-- Search -->
       <div id="home_search" class="col-lg-7 col-md-6 col-sm-6">
         <div class="input-group">
-          <span class="input-group-addon"><i class="fa fa-search"></i></span>
+          <span class="input-group-addon"><i class="fa fa-search"></i></span>    
           <input type="text" id="search" name="search" class="form-control" placeholder="Pretraga..."><!-- Search on home page -->
-          <input type="text" id="local_search" name="local_search" class="form-control hidden" placeholder="Pretraga..."><!-- Search on client statuses-ajax -->
+          <input type="text" id="local_search" name="local_search" class="form-control hidden" placeholder="Pretraga..."><!-- Search on client statuses-ajax --> 
         </div>
       </div>
       <!-- /Search -->
@@ -36,7 +36,7 @@
     @if (Session::has('message'))
         <div class="text-info h4 text-center"><i>{!! Session::get('message')!!}</i></div>
     @endif
-
+    
     <div class="row text-center">
 
       <!-- /Suspects -->
@@ -57,7 +57,7 @@
         <a href="{{ url('/sandler_db/4') }}" class='sandler_db btn btn-primary btn-md btn-block' role='button'><i class="fa fa-btn fa-thumbs-o-up" aria-hidden="true"></i>Jasna precizna budućnost
           @if($jpb > 0)<span class="alert-san-grey badge">{{$jpb}}</span>@endif
         </a>
-
+        
       </div>
       <!-- /Prosptects -->
       <!-- Clients -->
@@ -75,15 +75,15 @@
       <!-- Contracts -->
       <div id="contracts" class="col-lg-4 col-md-4 col-sm-4"><br>
         <h4 class="text-center"><i class="fa fa-btn fa fa-archive" aria-hidden="true"></i>&nbsp;Ugovori</h4>
-        <a href="{{ url('/contracts/in_progress') }}" class='contracts btn btn-primary btn-md btn-block' role='button'><i class="fa fa-btn fa-folder-open-o" aria-hidden="true"></i>U toku</a>
         <a href="{{ url('/contracts/unsigned') }}" class='contracts btn btn-primary btn-md btn-block' role='button'><i class="fa fa-btn fa-pencil-square-o" aria-hidden="true"></i>Nepotpisani
         @if($unsigned > 0)<span class="alert-san-grey badge">{{$unsigned}}</span>@endif
         </a>
+        <a href="{{ url('/contracts/in_progress') }}" class='contracts btn btn-primary btn-md btn-block' role='button'><i class="fa fa-btn fa-folder-open-o" aria-hidden="true"></i>U toku</a>
         <a href="{{ url('/contracts/broken') }}" class='contracts btn btn-primary btn-md btn-block' role='button'><i class="fa fa-btn fa-ban" aria-hidden="true"></i>Raskinuti
         </a>
         <a href="{{ url('/contracts/finished') }}" class='contracts btn btn-primary btn-md btn-block' role='button'><i class="fa fa-btn fa-folder" aria-hidden="true"></i>Završeni</a>
       </div>
-      <!-- /Contracts -->
+      <!-- /Contracts --> 
       <!-- Proinvoices -->
       <div id="proinvoices" class="col-lg-4 col-md-4 col-sm-4"><br>
         <h4 class="text-center"><i class="fa fa-btn fa-files-o" aria-hidden="true"></i>&nbsp;Profakture</h4>
@@ -119,7 +119,7 @@
       <!-- /Invoices -->
 
     </div>
-
+    
     <div class="row text-center">
 
       <!-- Insert DB -->
@@ -164,11 +164,11 @@
 
 @section('script')
   <script src="/js/time.js"></script>
-  <script src="/js/clients/home_search.js"></script>
+  <script src="/js/clients/home_search.js"></script> 
   <script src="/js/clients/home_clients.js"></script>
   <script src="/js/contracts/home_contracts.js"></script>
-  <script src="/js/invoices/home_proinvoices.js"></script>
-  <script src="/js/invoices/home_invoices.js"></script>
+  <script src="/js/invoices/home_proinvoices.js"></script>  
+  <script src="/js/invoices/home_invoices.js"></script> 
   <script src="/js/statistics/statistics.js"></script>
-  <script src="/js/debts/debts.js"></script>
+  <script src="/js/debts/debts.js"></script>  
 @endsection
