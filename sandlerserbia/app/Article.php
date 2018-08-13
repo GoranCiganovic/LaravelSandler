@@ -351,6 +351,7 @@ class Article extends Model
         $article['middle_articles'] = $this->get_middle_articles_html();
         $article['payings'] = $this->get_payings_html();
         $article['bottom_articles'] = $this->get_bottom_articles_html();
+		
         return $article;
     }
 }
